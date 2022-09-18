@@ -1,0 +1,3 @@
+<%= name %>
+
+Write some readme

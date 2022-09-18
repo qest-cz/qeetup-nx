@@ -5,11 +5,15 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "generate:app": "npx nx workspace-generator node-app",
+    "generate:ci": "npx ts-node ./tools/ci/generate.ts",
+    "delete:app": "npx nx generate remove"
   },
   "private": true,
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": "^4.18.1",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -36,8 +40,10 @@
     "@types/react-router-dom": "5.3.3",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
+    "@wanews/nx-esbuild": "^0.26.1",
     "babel-jest": "28.1.1",
     "cypress": "^10.7.0",
+    "esbuild": "^0.15.7",
     "eslint": "~8.15.0",
     "eslint-config-next": "12.2.5",
     "eslint-config-prettier": "8.1.0",
@@ -48,6 +54,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
+    "nodemon": "^2.0.20",
     "nx": "14.7.3",
     "prettier": "^2.6.2",
     "react-test-renderer": "18.2.0",
