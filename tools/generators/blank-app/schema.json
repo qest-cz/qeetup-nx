@@ -1,0 +1,16 @@
+{
+  "cli": "nx",
+  "id": "test",
+  "type": "object",
+  "properties": {
+    "appName": {
+      "type": "string",
+      "description": "Application name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    }
+  },
+  "required": ["appName"]
+}
