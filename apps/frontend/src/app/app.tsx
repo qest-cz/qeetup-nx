@@ -3,10 +3,12 @@ import styles from './app.module.css';
 import NxWelcome from './nx-welcome';
 
 import { Route, Routes, Link } from 'react-router-dom';
+import { Ui } from '@qeetup-13/ui';
 
 export function App() {
   return (
     <>
+      <Ui />
       <NxWelcome title="frontend" />
       <div />
 
