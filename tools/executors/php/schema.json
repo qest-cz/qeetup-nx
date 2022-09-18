@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "type": "object",
+  "cli": "nx",
+  "properties": {
+    "hostPath": {
+      "type": "string",
+      "description": "Folder or PHP file to host"
+    },
+    "hostname": {
+      "type": "string",
+      "description": "Url where PHP server will listen"
+    }
+  },
+  "required": ["hostPath", "hostname"]
+}

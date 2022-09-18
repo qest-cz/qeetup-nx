@@ -1,0 +1,18 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/php-app/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "./tools/executors/php:serve",
+      "options": {
+        "hostPath": "src/index.php",
+        "hostname": "localhost:3333"
+      },
+      "configurations": {
+        "production": {}
+      }
+    }
+  },
+  "tags": []
+}
