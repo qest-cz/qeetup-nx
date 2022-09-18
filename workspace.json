@@ -6,6 +6,7 @@
     "frontend": "apps/frontend",
     "frontend-e2e": "apps/frontend-e2e",
     "next-frontend": "apps/next-frontend",
-    "next-frontend-e2e": "apps/next-frontend-e2e"
+    "next-frontend-e2e": "apps/next-frontend-e2e",
+    "ui": "libs/ui"
   }
 }
